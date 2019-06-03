@@ -17,7 +17,7 @@ public class ApplicationServiceImpl implements ApplicationService{
 	ApplicationRepository applicationRepository;
 
 	@Override
-	public String approveCredit(Long appId) {
+	public Applications approveCredit(Long appId) {
 		
 	   Applications application1=applicationRepository.findById(appId).get();
 	   
@@ -25,15 +25,15 @@ public class ApplicationServiceImpl implements ApplicationService{
 double loanAmt=	application1.getLoanAmount();
 	   if(salary>=loanAmt)
 	   { application1.setCreditStatus("Approved");
-	   applicationRepository.save(application1);
+	  
 		   
 	   }else
 	   {
 		   application1.setCreditStatus("Rejected");
-		   applicationRepository.save(application1);
+		 
 	   }
 	  
-		return "Application "+ application1.getCreditStatus();
+		return applicationRepository.save(application1);
 	}
 	
 	@Override

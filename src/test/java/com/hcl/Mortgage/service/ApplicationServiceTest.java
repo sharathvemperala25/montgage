@@ -1,20 +1,16 @@
 package com.hcl.Mortgage.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
-
 import java.net.URISyntaxException;
 import java.util.Date;
 import java.util.Optional;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.boot.test.mock.mockito.MockBeans;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.hcl.Mortgage.entity.Applications;

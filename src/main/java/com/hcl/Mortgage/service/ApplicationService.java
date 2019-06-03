@@ -8,7 +8,7 @@ import com.hcl.Mortgage.entity.Applications;
 
 public interface ApplicationService {
 
-public String approveCredit(Long appId);
+public Applications approveCredit(Long appId);
 Applications saveApplication(Applications applications);
 public List<Applications> retrieveAllApplications();
 public Applications createApplication(Applications applications);

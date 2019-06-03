@@ -24,7 +24,7 @@ public class ApplicationController {
 	
 	
 	@PutMapping("/approval/{id}")
-	public String getApproval(@PathVariable("id") Long  appId)
+	public Applications getApproval(@PathVariable("id") Long  appId)
 	{
 		return applicationService.approveCredit(appId);
 	}
