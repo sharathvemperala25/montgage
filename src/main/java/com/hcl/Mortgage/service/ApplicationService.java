@@ -6,4 +6,6 @@ public interface ApplicationService {
 
 	
 	public String approveCredit(Long appId);
+
+Applications saveApplication(Applications applications);
 }
