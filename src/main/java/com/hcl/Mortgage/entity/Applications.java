@@ -75,6 +75,25 @@ public Date getTimeCreated() {
 public void setTimeCreated(Date timeCreated) {
 	this.timeCreated = timeCreated;
 }
+public Applications(Long id, String firstName, String lastName, String address, String creditStatus,
+		Double applicantIncome, Double loanAmount, Date timeCreated) {
+	super();
+	this.id = id;
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.address = address;
+	this.creditStatus = creditStatus;
+	this.applicantIncome = applicantIncome;
+	this.loanAmount = loanAmount;
+	this.timeCreated = timeCreated;
+}
  
+public Applications() {
+	// TODO Auto-generated constructor stub
+}
+
+
+
+
 }
 

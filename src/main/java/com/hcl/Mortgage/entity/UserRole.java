@@ -1,7 +1,6 @@
 package com.hcl.Mortgage.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -15,9 +14,6 @@ public class UserRole {
 	private Long id;
 	private String roleName;
 	private String description;
-	
-
-	
 	
 	public Long getId() {
 		return id;
@@ -37,8 +33,5 @@ public class UserRole {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	
-	
 
 }
