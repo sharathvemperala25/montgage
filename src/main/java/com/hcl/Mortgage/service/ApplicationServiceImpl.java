@@ -1,5 +1,7 @@
 package com.hcl.Mortgage.service;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +32,15 @@ double loanAmt=	application1.getLoanAmount();
 	   }
 	  
 		return "Application "+ application1.getCreditStatus();
+	}
+	
+	@Override
+
+	public Applications saveApplication(Applications applications) {
+		applications.setCreditStatus("New");
+		Date timeCreated = new Date();
+		applications.setTimeCreated(timeCreated);
+		return applicationRepository.save(applications);
 	}
 
 	
